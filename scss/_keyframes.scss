@@ -1,0 +1,17 @@
+@keyframes boxshadow{
+    0% {border-color: orange;}
+    50% {border-color: orangered;}
+    100% {border-color: orange;}
+}
+
+@keyframes boxshadow2{
+    0% {box-shadow: 5px 5px  rgba(88, 9, 53, 0.5);}
+    50% {box-shadow: 5px 5px rgba(44, 17, 143, 0.7);}
+    100%{box-shadow: 5px 5px  rgba(88, 9, 53, 0.5);}
+}
+
+@keyframes colorWelcomeTextanim{
+    0% {color: orange;}
+    50% {color: orangered;}
+    100% {color: orange;}
+}

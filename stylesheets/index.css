@@ -1,0 +1,234 @@
+@keyframes boxshadow {
+  0% {
+    border-color: orange;
+  }
+  50% {
+    border-color: orangered;
+  }
+  100% {
+    border-color: orange;
+  }
+}
+@keyframes boxshadow2 {
+  0% {
+    box-shadow: 5px 5px rgba(88, 9, 53, 0.5);
+  }
+  50% {
+    box-shadow: 5px 5px rgba(44, 17, 143, 0.7);
+  }
+  100% {
+    box-shadow: 5px 5px rgba(88, 9, 53, 0.5);
+  }
+}
+@keyframes colorWelcomeTextanim {
+  0% {
+    color: orange;
+  }
+  50% {
+    color: orangered;
+  }
+  100% {
+    color: orange;
+  }
+}
+body {
+  background-image: url(../src/image/bg.png);
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+#header {
+  min-height: 3em;
+}
+#header #headerInner {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(38, 49, 53, 0.445);
+  min-height: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+  animation-name: boxshadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: boxshadow2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#header #headerInner #buttons {
+  color: #f1e2dc;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+#header #headerInner #buttons p {
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  animation-name: boxshadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-color: black;
+  animation-name: boxshadow2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#header #headerInner #buttons p:hover {
+  background-color: #e08e00;
+  color: black;
+}
+#header #headerInner #buttons p a {
+  color: #f1e2dc;
+  text-decoration: none;
+}
+#header #headerInner #welcomeMessage {
+  color: #f1e2dc;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+#header #headerInner #welcomeMessage span {
+  animation-name: boxshadow2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#body #bodyInner {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 400px;
+  background-color: rgba(38, 49, 53, 0.445);
+  margin-top: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  animation-name: boxshadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  min-height: 700px;
+  max-height: 700px;
+  animation-name: boxshadow2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#footer #footerdiv {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 5em;
+  background-color: rgba(38, 49, 53, 0.445);
+  margin-top: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  animation-name: boxshadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: boxshadow2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#footer #footerdiv p {
+  color: #f1e2dc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.formFields {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #f1e2dc;
+  border-radius: 10px;
+}
+.formFields legend {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.formFields .label {
+  color: #f1e2dc;
+  font-size: 1.3em;
+}
+.formFields .input {
+  border: 2px solid blueviolet;
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+}
+.formFields .input2 {
+  border: 2px solid blueviolet;
+  width: 80%;
+  border-radius: 5px;
+}
+.formFields #submit {
+  width: 81%;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.firstPage {
+  min-height: 200px;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.firstPage .imageFirst {
+  background-color: rgba(41, 195, 241, 0.349);
+  min-height: inherit;
+  width: 30%;
+  float: left;
+  border-right: 2px solid black;
+}
+.firstPage .imageFirst img {
+  width: 100%;
+  height: 200px;
+}
+.firstPage .contentFirst {
+  background-color: rgba(126, 252, 0, 0.137);
+  min-height: inherit;
+  display: flex;
+}
+.firstPage .contentFirst p {
+  text-align: left;
+  padding-left: 1em;
+  color: #462b2b;
+}
+
+.aboutme {
+  margin: 1em;
+  text-align: center;
+}
+.aboutme #aboutmeId {
+  width: 30%;
+  margin: 0 auto;
+}
+.aboutme #aboutmeId img {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+}
+.aboutme #aboutmeContent p {
+  text-align: left;
+  text-indent: 2em;
+  font-size: 20px;
+}
+
+#welcomeDiv {
+  text-align: center;
+  margin: 2em;
+}
+#welcomeDiv p {
+  text-align: left;
+}
+
+/*# sourceMappingURL=index.css.map */

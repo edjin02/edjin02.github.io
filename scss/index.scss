@@ -1,0 +1,215 @@
+@import 'keyframes';
+@import 'vars';
+@import 'mixins';
+
+body{
+    background-image: url(../src/image/bg.png);
+    font-family: $main_font;
+}
+
+#header{
+    // background-color: lightblue;
+    min-height: 3em;
+    #headerInner{
+        width: 80%;
+        margin: 0 auto;
+        background-color: $header_background_color;
+        min-height: inherit;
+        border: 1px solid $black;
+        border-radius: 5px;
+        animation-name: boxshadow;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        
+        @include boxshadow2;
+
+        #buttons{
+            color: $orange_red;
+            width: 80%;
+            display: flex;
+            margin: 0 auto;
+            p{
+                margin: 0 auto;
+                margin-top: 1em;
+                width: 100px;
+                padding: 5px;
+                text-align: center;
+                border: 1px solid $black;
+                border-radius: 5px;
+                // margin-right: 1em;
+                margin-bottom: 1em;
+                animation-name: boxshadow;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                background-color: $black;
+                @include boxshadow2;
+                &:hover{ //change button color when mouse hover
+                    background-color: $orange;
+                    color: $black;
+                }
+                a{
+                    color: $orange_red;
+                    text-decoration: none;
+
+                }
+            }
+        }
+
+        #welcomeMessage{
+            color: $orange_red;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.7em;
+
+            span{
+                @include colorWelcomeTextanim;
+            }
+        }
+    }
+}
+
+#body{
+
+    #bodyInner{
+        width: 80%;
+        margin: 0 auto;
+        min-height: 400px;
+        background-color: $header_background_color;
+        margin-top: 4em;
+        border: 1px solid $black;
+        border-radius: 10px;
+        animation-name: boxshadow;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        min-height: 700px;
+        max-height: 700px;
+        // overflow: scroll;
+
+        @include boxshadow2;
+    }
+}
+
+#footer{
+    #footerdiv{
+        width: 80%;
+        margin: 0 auto;
+        min-height: 5em;
+        background-color: $header_background_color;
+        margin-top: 4em;
+        border: 1px solid $black;
+        border-radius: 10px;
+        animation-name: boxshadow;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        @include boxshadow2;
+        p{
+            color: $orange_red;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            
+            // @include colorWelcomeTextanim;
+            
+        }
+    }
+}
+
+.formFields{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid $orange_red;
+    border-radius: 10px;
+    legend{
+        color: $black;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .label{
+        color: $orange_red;
+        font-size: 1.3em;
+    }
+    .input{
+        border: 2px solid blueviolet;
+        width: 80%;
+        height: 25px;
+        border-radius: 5px;
+    }
+    .input2{
+        border: 2px solid blueviolet;
+        width: 80%;
+        border-radius: 5px;
+    }
+    #submit{
+        width: 81%;
+        border: 2px solid blueviolet;
+        border-radius: 5px;
+        height: 25px;
+    }
+}
+
+.firstPage{
+    min-height: 200px;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid $black;
+    border-radius: 5px;
+    .imageFirst{
+        background-color: $div1_color;
+        min-height: inherit;
+        width: 30%;
+        float: left;
+        border-right: 2px solid $black;
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .contentFirst{
+        background-color: $div2_color;
+        min-height: inherit;
+        display: flex;
+        p{
+            text-align: left;
+            padding-left: 1em;
+            color: $cat_textcolor;
+        }
+    }
+}
+
+.aboutme{
+    margin: 1em;
+    text-align: center;
+    #aboutmeId{
+        width: 30%;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 400px;
+            border: 1px solid $black;
+        }
+    }
+    #aboutmeContent{
+        p{
+            text-align: left;
+            text-indent: 2em;
+            font-size: 20px;
+
+        }
+    }
+}
+
+#welcomeDiv{
+    text-align: center;
+    margin: 2em;
+    p{
+        text-align: left;
+    }
+}
