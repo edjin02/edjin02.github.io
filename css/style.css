@@ -1,0 +1,489 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.chead-color {
+  background-color: maroon;
+  color: white;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  height: 135px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.chead-text {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.card {
+  width: auto !important;
+  max-width: none !important;
+}
+
+.card-header {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;
+  color: #ffff;
+}
+
+.main-nav {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+}
+
+.main {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  padding: 0;
+  margin: -10px;
+  text-align: center;
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.main h6 {
+  font-size: 18px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+
+}
+
+th,
+td {
+  font-size: 13px;
+  height: 0;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+td:nth-of-type(3) {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+
+th:nth-child(1) {
+  width: 5%;
+}
+
+th:nth-child(2) {
+  width: 25%;
+}
+
+th:nth-child(3) {
+  width: 40%;
+}
+
+th:nth-child(4) {
+  width: 20%;
+}
+
+th:nth-child(5) {
+  width: 10%;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+
+.modal-header {
+  background-color: #800000;
+  padding: 10px;
+}
+
+.modal-title {
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.modal-body {
+  padding: 10px;
+}
+
+.modal-footer {
+  background-color: #800000;
+  padding: 8px;
+}
+
+
+.cheader-color {
+  background-color: maroon;
+  color: white;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  padding: 5px;
+}
+
+.cheader-text {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.cheader-color .add {
+  color: white;
+  text-align: right;
+}
+
+.custom-btn {
+  background-color: maroon;
+  border: none;
+}
+
+.cfooter1 {
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 0 solid rgba(0, 0, 0, 0.125);
+}
+
+.cfooter1:last-child {
+  border-radius: 0 0 calc(0.25rem - 0) calc(0.25rem - 0);
+}
+
+div.col h8 {
+  font-size: 13px;
+}
+
+.btn-yellow {
+  background-color: #ffcc00;
+}
+
+#suggestionBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion.selected {
+  background-color: #f2f2f2;
+}
+
+.faminfo {
+  max-height: 755px;
+  overflow-y: auto;
+
+}
+
+.faminfo::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+#suggestionBoxModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#suggestionBoxHouseModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#communitySuggestionBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS for the suggestion box */
+#communitysearchSuggestionBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* suggestion of civil status */
+#suggestionBoxCivilStatusModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#suggestionBoxHeadCivilStatusModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#suggestionBoxHeadModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#suggestionBoxHouseheadModal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#headcommunitySuggestionBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+#cancelHeadBtnx {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  padding: 0;
+}
+
+#cancelHeadBtnx:hover {
+  color: #ffff;
+  /* Change the color on hover */
+}
+
+#cancelHeadBtnx:focus {
+  outline: none;
+  /* Remove the focus outline */
+}
+
+@keyframes highlight {
+  0% { color: #000; }
+  50% { color: #FF0000; }
+  100% { color: #000; }
+}
+
+.centered-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  font-size: 24px;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.centered-text span {
+  animation: highlight 2s linear infinite;
+}
+
+
+
+.info {
+  text-align: center;
+  margin-left: 15px;
+  padding: -10px;
+  font-family: 'Arial', sans-serif;
+}
+
+#currentDate {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#currentTime {
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+.sidebar.modal-opened {
+  display: block !important;
+}
+
+/* Custom styles for the buttons */
+.confirmation-modal .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.confirmation-modal .btn-no {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  color: #333;
+  margin-right: 10px;
+}
+
+.confirmation-modal .btn-no:hover {
+  background-color: #e6e6e6;
+}
+
+.confirmation-modal .btn-yes {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+}
+
+.confirmation-modal .btn-yes:hover {
+  background-color: #0056b3;
+}
+
+
+/* Add any other styles you want for the buttons here */
+.btnVerif {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.btnVerif.btn-primary {
+  background-color: #7f8081;
+  color: #fff;
+}
+
+/* Add a pressed effect when the button is clicked */
+.btnVerif.pressed {
+  background-color: #007bff;
+}
